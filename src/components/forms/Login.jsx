@@ -48,17 +48,14 @@ const Login = () => {
                     message: "password must be 8 character ",
                   },
                 })}
-                className={` text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 ${
-                  errors.password ? "border-red-500" : "border-gray-200"
-                }`}
+                className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5"
                 type="password"
                 name="password"
                 id="password"
                 placeholder="enter password"
               />
             </Field>
-            <div>{errors?.root?.random?.message}</div>
-            <div>{errors?.root?.random?.message}</div>
+
             <Field>
               <button className="w-full text-white bg-blue-600 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 mt-2.5 text-center ">
                 Login
